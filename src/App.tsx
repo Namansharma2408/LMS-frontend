@@ -170,11 +170,11 @@ export function Table({
               {r.map((c, j) => (
                 <td
                   key={j}
-                  className={`py-4 ${j > 0 ? "text-muted-foreground" : "text-white"}`}
+                  className={`py-4 ${j > 0 ? "text-muted-foreground" : "text-black dark:text-white"}`}
                 >
                   {j === 0 ? (
                     <div className="flex items-center gap-3">
-                      <div className="grid size-9 place-items-center rounded-full bg-secondary font-semibold text-white">
+                      <div className="grid size-9 place-items-center rounded-full bg-secondary font-semibold text-black dark:text-white">
                         {String(c)
                           .split(" ")
                           .map((x) => x[0])
@@ -1431,7 +1431,7 @@ export default function App() {
           <div className="relative w-full max-w-lg rounded-3xl border border-border bg-card p-6 shadow-2xl animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setShowCreateCourseModal(false)}
-              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-white transition cursor-pointer"
+              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-black dark:hover:text-white transition cursor-pointer"
             >
               <X size={16} />
             </button>
@@ -1577,7 +1577,7 @@ export default function App() {
           <div className="relative w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-2xl animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setShowCheckoutModal(null)}
-              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-white transition cursor-pointer"
+              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-black dark:hover:text-white transition cursor-pointer"
             >
               <X size={16} />
             </button>
@@ -1599,14 +1599,14 @@ export default function App() {
                 className={`h-12 w-20 rounded-xl bg-linear-to-br ${showCheckoutModal.gradient} shrink-0`}
               />
               <div className="min-w-0 flex-1">
-                <h3 className="font-bold text-sm truncate text-white">
+                <h3 className="font-bold text-sm truncate text-black dark:text-white">
                   {showCheckoutModal.name}
                 </h3>
                 <span className="text-xs text-muted-foreground">
                   by {showCheckoutModal.instructor}
                 </span>
               </div>
-              <strong className="text-lg font-bold text-white shrink-0">
+              <strong className="text-lg font-bold text-black dark:text-white shrink-0">
                 {appliedCoupon ? (
                   <>
                     <span className="line-through text-xs text-muted-foreground mr-1.5">
@@ -1711,7 +1711,7 @@ export default function App() {
           <div className="relative w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-2xl animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setShowCreateCouponModal(false)}
-              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-white transition cursor-pointer"
+              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-black dark:hover:text-white transition cursor-pointer"
             >
               <X size={16} />
             </button>
@@ -1840,7 +1840,7 @@ export default function App() {
           <div className="relative w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-2xl animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setShowGrantAccessModal(false)}
-              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-white transition cursor-pointer"
+              className="absolute right-6 top-6 rounded-xl border border-border p-2 hover:bg-secondary text-muted-foreground hover:text-black dark:hover:text-white transition cursor-pointer"
             >
               <X size={16} />
             </button>

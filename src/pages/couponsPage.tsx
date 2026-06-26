@@ -65,7 +65,7 @@ export const CouponsPage: React.FC<CouponsPageProps> = ({
                 setCouponSearch(e.target.value)
                 setCouponPageNum(1)
               }}
-              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-white placeholder-muted-foreground focus:outline-hidden focus:border-primary transition"
+              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-black/90 dark:text-white placeholder-muted-foreground focus:outline-hidden focus:border-primary transition"
             />
           </div>
           <div>
@@ -78,7 +78,7 @@ export const CouponsPage: React.FC<CouponsPageProps> = ({
                 setCouponTypeFilter(e.target.value)
                 setCouponPageNum(1)
               }}
-              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-white focus:outline-hidden focus:border-primary transition"
+              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-black/90 dark:text-white focus:outline-hidden focus:border-primary transition"
             >
               <option value="all">All Types</option>
               <option value="Percentage">Percentage</option>
@@ -95,7 +95,7 @@ export const CouponsPage: React.FC<CouponsPageProps> = ({
                 setCouponStatusFilter(e.target.value)
                 setCouponPageNum(1)
               }}
-              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-white focus:outline-hidden focus:border-primary transition"
+              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-black/90 dark:text-white focus:outline-hidden focus:border-primary transition"
             >
               <option value="all">All Statuses</option>
               <option value="active">Active</option>
@@ -112,7 +112,7 @@ export const CouponsPage: React.FC<CouponsPageProps> = ({
                 setCouponCourseFilter(e.target.value)
                 setCouponPageNum(1)
               }}
-              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-white focus:outline-hidden focus:border-primary transition"
+              className="w-full rounded-xl border border-border bg-secondary p-3 text-sm text-black/90 dark:text-white focus:outline-hidden focus:border-primary transition"
             >
               <option value="all">All Courses</option>
               {coursesList.map((course) => (

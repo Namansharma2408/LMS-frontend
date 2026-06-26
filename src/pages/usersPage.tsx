@@ -74,7 +74,7 @@ export const UsersPage: React.FC<UsersPageProps> = ({
         <div className="fixed inset-y-0 right-0 z-50 w-full max-w-md border-l border-border bg-[#0A0A0A] p-6 shadow-2xl overflow-y-auto animate-in slide-in-from-right duration-250">
           <button
             onClick={() => setSelectedUser(null)}
-            className="float-right cursor-pointer p-1.5 rounded-xl hover:bg-secondary text-muted-foreground hover:text-white transition"
+            className="float-right cursor-pointer p-1.5 rounded-xl hover:bg-secondary text-muted-foreground hover:text-black dark:hover:text-white transition"
           >
             <X size={18} />
           </button>
@@ -112,7 +112,7 @@ export const UsersPage: React.FC<UsersPageProps> = ({
                     alert(`Error updating user status: ${err.message}`)
                   }
                 }}
-                className="w-full text-center rounded-xl bg-secondary hover:bg-secondary/80 border border-border text-sm text-white py-2 font-medium cursor-pointer transition"
+                className="w-full text-center rounded-xl bg-secondary hover:bg-secondary/80 border border-border text-sm text-black dark:text-white py-2 font-medium cursor-pointer transition"
               >
                 {selectedUser.status === "Active" ? "Suspend Account" : "Activate Account"}
               </button>

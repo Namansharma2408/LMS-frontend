@@ -53,7 +53,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, isUnlocked, selectedLecture, 
         style={{ paddingLeft: `${depth * 14 + 10}px` }}
         className={`flex w-full items-center justify-between py-3 text-left text-xs transition cursor-pointer ${
           !isUnlocked ? "opacity-60 cursor-not-allowed" : "hover:bg-secondary/50"
-        } ${isSelected ? "bg-primary/10 text-primary font-semibold border-r-2 border-primary" : "text-muted-foreground hover:text-white"}`}
+        } ${isSelected ? "bg-primary/10 text-primary font-semibold border-r-2 border-primary" : "text-muted-foreground hover:text-black dark:hover:text-white"}`}
       >
         <div className="flex items-center gap-2 min-w-0">
           {isUnlocked ? (
@@ -251,7 +251,7 @@ function LecturesPage({ courses, purchasedCourseIds, role, onBuyCourse, onUpdate
                         key={tab}
                         onClick={() => setActiveTab(tab)}
                         className={`pb-3 text-sm font-semibold capitalize transition cursor-pointer relative ${
-                          activeTab === tab ? "text-primary font-bold" : "text-muted-foreground hover:text-white"
+                          activeTab === tab ? "text-primary font-bold" : "text-muted-foreground hover:text-black dark:hover:text-white"
                         }`}
                       >
                         {tab}
@@ -302,7 +302,7 @@ function LecturesPage({ courses, purchasedCourseIds, role, onBuyCourse, onUpdate
                     <div className="space-y-4">
                       <div className="flex items-center justify-between border-b border-border/60 pb-3">
                         <h4 className="font-bold">Student Discussion (3)</h4>
-                        <button className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 text-sm font-semibold border border-border bg-card text-muted-foreground hover:text-white transition cursor-pointer">
+                        <button className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 text-sm font-semibold border border-border bg-card text-muted-foreground hover:text-black dark:hover:text-white transition cursor-pointer">
                           <MessageSquare size={14} /> Post Question
                         </button>
                       </div>

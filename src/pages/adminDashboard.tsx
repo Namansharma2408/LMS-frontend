@@ -100,7 +100,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   key={r}
                   onClick={() => setRange(r)}
                   className={`rounded-xl px-3 py-2 text-sm transition cursor-pointer ${
-                    range === r ? "bg-card text-white font-semibold" : "text-muted-foreground hover:text-white"
+                    range === r ? "bg-card text-black dark:text-white font-semibold" : "text-muted-foreground hover:text-black dark:hover:text-white"
                   }`}
                 >
                   {r}

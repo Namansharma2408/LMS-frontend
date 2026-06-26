@@ -113,7 +113,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
           className={`px-5 py-3.5 text-sm font-semibold border-b-2 transition-all cursor-pointer ${
             coursesSubTab === "all"
               ? "border-primary text-primary font-bold"
-              : "border-transparent text-muted-foreground hover:text-white"
+              : "border-transparent text-muted-foreground hover:text-black dark:hover:text-white"
           }`}
         >
           All Courses ({coursesList.length})
@@ -126,7 +126,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
           className={`px-5 py-3.5 text-sm font-semibold border-b-2 transition-all cursor-pointer ${
             coursesSubTab === "my"
               ? "border-primary text-primary font-bold"
-              : "border-transparent text-muted-foreground hover:text-white"
+              : "border-transparent text-muted-foreground hover:text-black dark:hover:text-white"
           }`}
         >
           My Courses (
@@ -149,7 +149,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
               <BookOpen size={22} />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-white">
+              <h3 className="font-bold text-lg text-black dark:text-white">
                 No enrolled courses
               </h3>
               <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
@@ -231,7 +231,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({
                               <div
                                 key={student.id}
                                 title={`${student.name} (${student.email}) - ${student.progress}%`}
-                                className="inline-flex size-6 rounded-full ring-2 ring-card bg-secondary text-[10px] font-bold text-white items-center justify-center cursor-pointer hover:-translate-y-1 transition-transform"
+                                className="inline-flex size-6 rounded-full ring-2 ring-card bg-secondary text-[10px] font-bold text-black dark:text-white items-center justify-center cursor-pointer hover:-translate-y-1 transition-transform"
                               >
                                 {student.name
                                   .split(" ")

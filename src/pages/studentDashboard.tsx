@@ -123,7 +123,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({
                         className={`h-16 w-24 shrink-0 rounded-2xl bg-linear-to-br ${c.gradient}`}
                       />
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-bold text-sm text-white truncate">
+                        <h3 className="font-bold text-sm text-black dark:text-white truncate">
                           {c.name}
                         </h3>
                         <p className="text-xs text-muted-foreground mt-0.5">

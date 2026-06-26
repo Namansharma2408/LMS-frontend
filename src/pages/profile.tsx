@@ -102,13 +102,13 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
           {/* Avatar with dynamic premium gradient */}
           <div className="relative group">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-accent opacity-75 blur-md group-hover:opacity-100 transition duration-300" />
-            <div className="relative size-24 rounded-full bg-card border border-border flex items-center justify-center text-3xl font-bold text-white shadow-2xl">
+            <div className="relative size-24 rounded-full bg-card border border-border flex items-center justify-center text-3xl font-bold text-black dark:text-white shadow-2xl">
               {initials}
             </div>
             <span className="absolute bottom-0 right-0 size-5 rounded-full border-2 border-card bg-emerald-500 flex items-center justify-center" title="Online" />
           </div>
 
-          <h2 className="text-2xl font-bold mt-5 text-white">{currentUser.name}</h2>
+          <h2 className="text-2xl font-bold mt-5 text-black dark:text-white">{currentUser.name}</h2>
           
           <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/20 capitalize">
             {currentUser.role} Account
@@ -139,7 +139,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
         {/* Right Card: Statistics and Analytics */}
         <div className="rounded-3xl border border-border bg-card p-6 flex flex-col justify-between">
           <div>
-            <h3 className="text-lg font-bold text-white mb-4">Learning Statistics</h3>
+            <h3 className="text-lg font-bold text-black dark:text-white mb-4">Learning Statistics</h3>
             
             {/* Stats Cards Row */}
             <div className="grid gap-4 sm:grid-cols-3">
@@ -148,7 +148,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
                   <BookOpen size={40} />
                 </div>
                 <span className="text-xs text-muted-foreground font-medium block">Courses Enrolled</span>
-                <strong className="text-3xl font-bold mt-2 block text-white">{totalEnrolled}</strong>
+                <strong className="text-3xl font-bold mt-2 block text-black dark:text-white">{totalEnrolled}</strong>
                 <span className="text-[10px] text-muted-foreground mt-1 block">Lifetime access</span>
               </div>
 
@@ -157,7 +157,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
                   <Activity size={40} />
                 </div>
                 <span className="text-xs text-muted-foreground font-medium block">Average Progress</span>
-                <strong className="text-3xl font-bold mt-2 block text-white">{averageProgress}%</strong>
+                <strong className="text-3xl font-bold mt-2 block text-black dark:text-white">{averageProgress}%</strong>
                 <span className="text-[10px] text-muted-foreground mt-1 block">Across all topics</span>
               </div>
 
@@ -166,7 +166,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
                   <Award size={40} />
                 </div>
                 <span className="text-xs text-muted-foreground font-medium block">Certificates Earned</span>
-                <strong className="text-3xl font-bold mt-2 block text-white">{completedCoursesCount}</strong>
+                <strong className="text-3xl font-bold mt-2 block text-black dark:text-white">{completedCoursesCount}</strong>
                 <span className="text-[10px] text-muted-foreground mt-1 block">100% completed</span>
               </div>
             </div>
@@ -178,7 +178,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
                   <Trophy size={18} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm text-white">Daily Learning Streak</h4>
+                  <h4 className="font-semibold text-sm text-black dark:text-white">Daily Learning Streak</h4>
                   <p className="text-xs text-muted-foreground">Keep studying daily to maintain your momentum!</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
             </div>
             <button 
               onClick={() => onSelectPage("Courses")}
-              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-secondary hover:bg-secondary/70 hover:text-white px-4 py-2 text-xs font-semibold text-muted-foreground transition cursor-pointer"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-secondary hover:bg-secondary/70 hover:text-black dark:hover:text-white px-4 py-2 text-xs font-semibold text-muted-foreground transition cursor-pointer"
             >
               Browse Catalog <ArrowRight size={14} />
             </button>
@@ -206,7 +206,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
 
       {/* Enrolled Courses Grid */}
       <section className="space-y-4">
-        <h3 className="text-xl font-bold text-white flex items-center gap-2">
+        <h3 className="text-xl font-bold text-black dark:text-white flex items-center gap-2">
           <BookOpen size={18} className="text-primary" />
           My Curriculum & Progress
         </h3>
@@ -233,7 +233,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
                     <div className="min-w-0 flex-1">
                       <h4 
                         onClick={() => onSelectCourseDetail(course.id)}
-                        className="font-bold text-sm text-white truncate hover:text-primary transition cursor-pointer"
+                        className="font-bold text-sm text-black dark:text-white truncate hover:text-primary transition cursor-pointer"
                       >
                         {course.name}
                       </h4>
@@ -292,7 +292,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({
               <BookOpen size={24} />
             </div>
             <div className="space-y-1">
-              <h4 className="font-bold text-white">No Enrolled Courses</h4>
+              <h4 className="font-bold text-black dark:text-white">No Enrolled Courses</h4>
               <p className="text-xs text-muted-foreground max-w-xs mx-auto">
                 You haven't registered or purchased any courses yet. Explore our curriculum options to get started.
               </p>

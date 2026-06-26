@@ -29,7 +29,7 @@ export const AnalyticsPage: React.FC<AnalyticsPageProps> = ({
                 className={`rounded-2xl px-4 py-2 text-sm transition cursor-pointer font-semibold ${
                   analyticsTab === x
                     ? "bg-primary text-white"
-                    : "border border-border text-muted-foreground hover:text-white"
+                    : "border border-border text-muted-foreground hover:text-black dark:hover:text-white"
                 }`}
               >
                 {x}

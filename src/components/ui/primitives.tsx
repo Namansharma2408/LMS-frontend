@@ -117,11 +117,11 @@ export function Table({
               {r.map((c, j) => (
                 <td
                   key={j}
-                  className={`py-4 ${j > 0 ? "text-muted-foreground" : "text-white"}`}
+                  className={`py-4 ${j > 0 ? "text-muted-foreground" : "text-black dark:text-white"}`}
                 >
                   {j === 0 ? (
                     <div className="flex items-center gap-3">
-                      <div className="grid size-9 place-items-center rounded-full bg-secondary font-semibold text-white">
+                      <div className="grid size-9 place-items-center rounded-full bg-secondary font-semibold text-black dark:text-white">
                         {String(c)
                           .split(" ")
                           .map((x) => x[0])
