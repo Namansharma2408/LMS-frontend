@@ -1,4 +1,4 @@
-const BASE_API_URL = 'https://lms-backend-td88.onrender.com/';
+const BASE_API_URL = 'https://lms-backend-td88.onrender.com';
 const API_BASE_URL = `${BASE_API_URL}/api`;
 
 async function fetchAPI(endpoint: string, options: RequestInit = {}) {

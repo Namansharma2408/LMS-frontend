@@ -263,7 +263,7 @@ function SearchBar() {
         if (token) {
           headers["Authorization"] = `Bearer ${token}`
         }
-        const BASE_API_URL = 'https://lms-backend-td88.onrender.com/';
+        const BASE_API_URL = 'https://lms-backend-td88.onrender.com';
         const res = await fetch(
           `${BASE_API_URL}/api/search?query=${encodeURIComponent(search)}`,
           {
