@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const BASE_API_URL = 'https://lms-backend-rouge-nu.vercel.app';
+const API_BASE_URL = `${BASE_API_URL}/api`;
 
 async function fetchAPI(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem('token');

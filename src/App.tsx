@@ -263,7 +263,7 @@ function SearchBar() {
         if (token) {
           headers["Authorization"] = `Bearer ${token}`
         }
-        const BASE_API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:5000"
+        const BASE_API_URL = 'https://lms-backend-rouge-nu.vercel.app';
         const res = await fetch(
           `${BASE_API_URL}/api/search?query=${encodeURIComponent(search)}`,
           {
