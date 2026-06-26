@@ -1,7 +1,7 @@
 import React from "react"
 import { Star } from "lucide-react"
 import { Badge, Button, Panel } from "../components/ui/primitives"
-import type { Course } from "../../data/coursesData"
+import type { Course } from "../data/coursesData"
 
 interface InstructorDashboardProps {
   currentUser: any

@@ -1,7 +1,7 @@
 import React from "react"
 import { BarChart, Bar, AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts"
 import { Badge, Panel, Table } from "../components/ui/primitives"
-import type { Course } from "../../data/coursesData"
+import type { Course } from "../data/coursesData"
 
 interface AdminDashboardProps {
   currentUser: any

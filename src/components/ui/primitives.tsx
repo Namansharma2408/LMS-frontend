@@ -1,11 +1,9 @@
-import { useState, useEffect, type ReactNode } from "react"
+import {  type ReactNode } from "react"
 import {
-  Bell,
   ChevronDown,
   MoreHorizontal,
   Search,
 } from "lucide-react"
-import type { Course } from "../../data/coursesData"
 
 export function Badge({
   children,
